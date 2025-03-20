@@ -1,0 +1,14 @@
+.category-list {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+  }
+  .category-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .category-item:hover {
+    background-color: #ddd;
+  }
