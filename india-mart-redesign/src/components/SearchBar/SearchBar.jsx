@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
 
+
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -16,7 +17,7 @@ function SearchBar() {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch} class='search-one'>Search</button>
     </div>
   );
 }

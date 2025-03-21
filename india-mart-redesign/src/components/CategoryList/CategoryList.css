@@ -2,13 +2,37 @@
     display: flex;
     gap: 10px;
     padding: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f0f0f0;
+  }
+  .category-list::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .category-list::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .category-list::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
   }
   .category-item {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 10px 20px;
     cursor: pointer;
+    color:#007bff;
+    border-radius:5px;
+    font-weight:bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   }
   .category-item:hover {
-    background-color: #ddd;
+    background-color:#0056b3;
+    color:white;
+    transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   }

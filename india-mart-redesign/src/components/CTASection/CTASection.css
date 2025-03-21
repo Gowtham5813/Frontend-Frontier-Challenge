@@ -14,7 +14,12 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     font-size: 16px;
     margin-top: 20px;
+    display:inline-block;
   }
   .cta-button:hover {
     background-color: #004080;
+  }
+  .cta-section .cta-button-container {
+    display: flex;
+    justify-content: center;
   }
