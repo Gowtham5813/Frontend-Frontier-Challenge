@@ -1,11 +1,22 @@
-// Header.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { FaUser, FaShoppingCart, FaMoneyBill, FaQuestionCircle } from 'react-icons/fa';
+import IndiaMartLogo from '../../assets/india-mart-01.png';
 
 const Header = ({ bgColor }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Change to true if scrolled > 50px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="header" style={{ backgroundColor: bgColor }}>
+    <header className={isScrolled ? "header scrolled" : "header"} style={{ backgroundColor: bgColor }}>
       {/* Left Section - Sign In */}
       <div className="header-section">
         <FaUser className="icon" />
@@ -14,7 +25,7 @@ const Header = ({ bgColor }) => {
 
       {/* Center Section - Logo */}
       <div className="header-logo" onClick={() => window.location.href='/'}>
-        <img src="/path/to/indian-mart-logo.png" alt="Indian Mart" className="logo" />
+        <img src={IndiaMartLogo} alt="Indian Mart" className="logo" />
       </div>
 
       {/* Right Section - Buy, Sell, Help */}
