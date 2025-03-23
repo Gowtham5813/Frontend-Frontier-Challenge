@@ -33,7 +33,7 @@ Deployment: Vercel
 #Installation Instructions :
 Clone the repository:
 
-git clone https://github.com/Gowtham5813/india-mart-redesign.git
+git clone https://github.com/Gowtham5813/Frontend-Frontier-Challenge.git
 
 Navigate to the project directory:
 
