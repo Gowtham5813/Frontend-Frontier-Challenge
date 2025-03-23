@@ -59,8 +59,8 @@ Deployment Link :
 India Mart Redesign - "(https://frontend-frontier-challenge-7xwb5alti.vercel.app/)"
 
 Screenshots :
-  ![Homepage Screenshot](src/screenshots/Homepage-01.png)
-  ![Product Page Screenshot](src/screenshots/Homepage-02.png)
-  ![Footer Screenshot](src/screenshots/Homepage-03.png)
+  ![Homepage Screenshot](india-mart-redesign/src/screenshots/Homepage-01.png)
+  ![Product Page Screenshot](india-mart-redesign/src/screenshots/Homepage-02.png)
+  ![Footer Screenshot](india-mart-redesign/src/screenshots/Homepage-03.png)
 
 
